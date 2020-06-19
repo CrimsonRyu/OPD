@@ -160,16 +160,16 @@ router.post('/email/', async (ctx, next) => {
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: "Yahoo",
     auth: {
-        user: 'pudhiyavansm@gmail.com', // generated ethereal user
-        pass: 'Crimson2000!'  // generated ethereal password
+        user: "opdsystem@yahoo.com",
+        pass: "baxgtrsjqgmijmea"
     }
   });
 
   // setup email data with unicode symbols
   let mailOptions = {
-      from: '"X Hospital" <pudhiyavansm@gmail.com>', // sender address
+      from: 'opdsystem@yahoo.com', // sender address
       to: email, // list of receivers
       subject: 'Appointment', // Subject line
       text: `Hello ${ctx.request.body.name}`, // plain text body

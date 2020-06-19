@@ -15,7 +15,7 @@
         </div>
     </header>
     <main>
-    <div style="width: 75%;height: 60%;text-align: center;position: absolute;top: 50%;left: 50%;margin-right: -50%;transform: translate(-50%, -50%);border: 2px solid red;">
+    <div style="margin-top: 2%;width: 75%;height: 70%;text-align: center;position: absolute;top: 50%;left: 50%;margin-right: -50%;transform: translate(-50%, -50%);border: 2px solid red;">
         <h1>OPD Token System</h1>
         <form action="/email" method="POST">
             Name: <input type="text" name="name" value="{{data.name}}" readonly><br>
@@ -23,6 +23,7 @@
             Mail: <input type="text" name="email" value="{{data.email}}" readonly><br>
             Doctor Name: <input type="text" name="doctor_name" value="{{data.doctor_name}}" readonly><br>
             Symptom: <input type="text" name="symptom" value="{{data.symptom}}" readonly><br>
+            Appointment Time: <input type="text" name="time" value="{{data.time}}" readonly><br>
             <input type="submit" value="Get Token via Email">
         </form>
     </div>
