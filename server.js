@@ -191,9 +191,7 @@ router.post('/email/', async (ctx, next) => {
 
 app.use(router.routes()).use(router.allowedMethods())
 
-const listener = app.listen(port, function() {
-  console.log('Your app is listening on port ' + listener.address().port)
-})
+app.listen(port, "0.0.0.0", () => console.log(`Server started on port ${port}`));
 
 async function verify(number) {
   return new Promise(function(resolve, reject) {
